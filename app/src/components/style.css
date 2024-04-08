@@ -1,0 +1,126 @@
+.container1 {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 9999;
+}
+
+.logo {
+    width: 170px;
+    height: 70px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    background: -webkit-linear-gradient(#8000ff, #fe7d26);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: El Messiri, sans-serif;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: linear-gradient(to right, #8000ff, #fe7d26);
+    ;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+
+
+/* -------------About---------- */
+
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 50px;
+}
+
+.copyright i {
+    color: red;
+}
+
+
+
+/* -------------------------small-screen css----------------------- */
+nav .fas {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #header {
+        background-image: url("C: \Users\NYMISHA\Desktop\Cyberden\src\images\smallbackground.png");
+    }
+
+    .header-text {
+        margin-top: 100%;
+        font-size: 16px;
+    }
+
+    .header-text h1 {
+        font-size: 30px;
+    }
+
+    nav .fas {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background: linear-gradient(to bottom, #28004f, #62300e);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 9999;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+     /* Open the menu when the menu icon is clicked */
+     nav ul.open {
+        right: 0;
+    }
+
+
+}

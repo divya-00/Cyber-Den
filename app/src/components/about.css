@@ -1,0 +1,220 @@
+/* Add your CSS styles here */
+body {
+    font-family: El Messiri, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+}
+
+
+#header1 {
+    width: 100%;
+    height: 55vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.container {
+    padding: 10px 5%;
+}
+
+.header-text {
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    background: -webkit-linear-gradient(#8000ff, #fe7d26); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+
+/* -------------About---------- */
+
+/*-----------------------------------card start-----------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto+Condensed:wght@700&family=Roboto:wght@300;400;500;600;700&display=swap');
+
+.Section {
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    transform: translateY(20%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: linear-gradient(135deg, #1b0035, #3f1f09);
+    border-radius: 10px;
+    box-shadow: 0px 0 31px 0px rgba(53, 53, 53, 0.1);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+}
+
+
+
+.Section h1 {
+    margin: 10px 0 0 0;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.card>p:nth-of-type(1) {
+    width: 100%;
+    margin: 20px 0;
+    font-size: 1.5rem;
+    color: #db77ff;
+    line-height: 2rem;
+    text-align: justify;
+}
+
+.card {
+    width: 90%;
+}
+
+
+/*---------------------------------------card end------------------------------------*/ 
+.about {
+    padding: 80px 0;
+    color: #ababab;
+    text-align: justify;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+
+    width: 350px;
+    height: 450px;
+    border-radius: 15px;
+}
+
+.about-col-2 {
+    flex-basis: 65%;
+}
+
+.sub-title {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 7px;
+    text-align: center;
+}
+
+.sub-title span {
+    background: -webkit-linear-gradient(#8000ff, #fe7d26); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+   
+}
+
+.me {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 20px;
+    
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    letter-spacing: 0.5px;
+    font-family: 'sans-serif', Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: linear-gradient(to right, #8000ff, #fe7d26);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+    letter-spacing: 0.3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents p{
+    font-size: 1.35rem;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+.copyright {
+    font-size: medium;
+}
+
+@media only screen and (max-width: 768px) {
+    .about-col-1 img {
+      width: 300px; /* Adjust width to fit smaller screens */
+      height: 300px; /* Maintain aspect ratio */
+      border-radius: 10px; /* Remove border radius */
+    }
+  
+    .tab-links {
+      margin-right: 2px; /* Reduce margin for tab links */
+      font-size: 16px; /* Decrease font size for tab links */
+    }
+  
+    .tab-contents p {
+      font-size: 1rem; /* Decrease font size for paragraphs in tab contents */
+    }
+
+    .header-text h1{
+        font-size: 40px;
+        margin-top: 20px;
+    }
+
+    .header-text img {
+        width:300px;
+    }
+  }
+  

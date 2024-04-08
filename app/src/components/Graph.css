@@ -1,0 +1,33 @@
+.line-graph-container {
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    color:antiquewhite;
+  }
+  
+  .options {
+    margin-bottom: 20px;
+  }
+  
+  .line-graph {
+    display: flex;
+    align-items: flex-end;
+    height: 600px; /* Adjust height as needed */
+  }
+  
+  .line-graph-line {
+    width: 20px; /* Adjust width as needed */
+    margin-right: 10px;
+    background-color: #007bff; /* Default color */
+  }
+  
+  .hover-info {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #cccccc;
+  }
+  

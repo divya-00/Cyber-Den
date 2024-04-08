@@ -1,0 +1,89 @@
+
+
+.darkmode {
+    --bg-body: rgb(6, 5, 40);
+    --primary-color: rgb(248, 248, 248);
+    --primary-hover-color: rgb(159, 159, 159);
+    --scrollbar-color: rgba(44, 49, 88, 0.7);
+    --card-bg-color: rgb(24, 26, 50);
+    --star-color: #a1d31a;
+    --border-color: rgba(189, 192, 234, 0.4);
+    --shadow-color: rgba(208, 195, 226, 0.13);
+    --accent-color: rgb(185, 129, 250);
+  }
+  
+  .dashboard-container {
+    display: flex;
+  }
+  .left-frame {
+    width: 30%; /* Adjust the width as needed */
+    padding: 10px;
+    border-right: 2px solid #8000ff;
+  }
+  .right-frame {
+    width: 70%; /* Adjust the width as needed */
+    padding: 10px;
+  }
+  .left-content {
+    padding: 25px 20px 40px;
+    color: var(--primary-color);
+    height: auto;
+    overflow: auto;
+  }
+
+
+  .night-img img {
+    width: 100%;
+  }
+
+  .search-box {
+    position: relative;
+    display: flex;
+  }
+  
+  .search-box input {
+    width: 80%;
+    height: 40px;
+    background: var(--card-bg-color);
+    color: var(--primary-color);
+    outline: 2px solid var(--border-color);
+    border: 0;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    padding: 8px 30px 8px 15px;
+    margin: 0 auto;
+  }
+  
+  .search-box input[type="text"]::placeholder {
+    color: var(--primary-color);
+    opacity: 0.5;
+    font-weight: 400;
+  }
+  
+  .search-box i {
+    position: absolute;
+    right: 11%;
+    top: 40%;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    cursor: pointer;
+  }
+   
+  .header {
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .header-mobile,
+  .header-tablet {
+    display: none;
+  }
+  
+  .header-desktop {
+    display: block;
+  }
+ 
+  /* Add any additional styling as needed */
+  
