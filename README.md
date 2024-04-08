@@ -56,3 +56,4 @@ Contributions are welcome! If you find any bugs or want to suggest enhancements,
 ## License
 
 This project is licensed under the terms of the [MIT license](LICENSE).
+Copyright © rights are reserved, made with <i className="fa fa-heart"></i> DeviDivyaSri Perni.
